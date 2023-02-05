@@ -40,16 +40,27 @@ nav ul {
 h2 {
     color:rgb(76, 93, 119)
 }
+.page-section {
+    
+}
 
-.about-me {
+#about-me {
 
 }
 
-.work {
+#work {
 
 }
 
-.contact-me {
+#work #card-1 {
+    max-width: 700px;
+}
+
+#work .card {
+    max-width: 350px;
+}
+
+#contact-me {
 
 }
 
