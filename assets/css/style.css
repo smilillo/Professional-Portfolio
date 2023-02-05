@@ -1,10 +1,15 @@
 :root {
-    
+    --main-text: rgb(76, 93, 119);
+    --header-text: rgb(148, 208, 203);
+
 
 }
 
 * {
-font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -17,6 +22,7 @@ p {
 
 a {
 
+    text-decoration: none;
 }
 
 /* Header */
@@ -26,7 +32,7 @@ display: flex;
 }
 
 nav {
- color:rgb(148, 208, 203);
+ color: var(--header-text);
 }
 
 nav a:hover {
@@ -37,11 +43,24 @@ nav ul {
     list-style-type: none;
 }
 
+h1 {
+    background-color: var(--header-text);
+    
+}
+
 h2 {
-    color:rgb(76, 93, 119)
+    color:var(--main-text);
+    border-right: solid var(--main-text);
+    padding: 10px;
 }
 .page-section {
-    
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
 }
 
 #about-me {
@@ -60,8 +79,8 @@ h2 {
     max-width: 350px;
 }
 
-#contact-me {
-
+#contact-me ul{
+    list-style-type: none;
 }
 
 @media
