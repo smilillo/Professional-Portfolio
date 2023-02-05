@@ -1,54 +1,68 @@
 :root {
     --main-text: rgb(76, 93, 119);
-    --header-text: rgb(148, 208, 203);
-
-
+    --primary: rgb(148, 208, 203);
+    --secondary: rgb(47, 48, 54);
 }
 
 * {
-    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
 body {
-
+    font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 p {
-
+    font-size: 16px;
 }
 
 a {
-
     text-decoration: none;
 }
 
 /* Header */
 header {
-background-color: rgb(47, 48, 54);
-display: flex;
+    background-color: var(--secondary);
+    display: flex;
+    padding: 20px;
 }
 
-nav {
- color: var(--header-text);
+header h1 {
+    background-color: var(--primary);
+    padding: 10px 10px;
 }
 
-nav a:hover {
-
+/* Nav */
+header nav {
+ padding: 10px;
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
+    display: flex;
 }
 
-h1 {
-    background-color: var(--header-text);
-    
+header nav ul li {
+    margin: 10px;
 }
 
-h2 {
+header nav ul li a {
+    color: var(--primary);
+}
+
+/* Banner */
+div {
+}
+
+div h2 {
+    background-color: var(--primary);
+}
+
+/* Main Content */
+h3 {
+    font-size: 36px;
     color:var(--main-text);
     border-right: solid var(--main-text);
     padding: 10px;
@@ -63,24 +77,44 @@ h2 {
     justify-content: space-between;
 }
 
+/* About Me */
 #about-me {
-
+    display: flex;
 }
 
+#about-me p {
+    
+}
+
+/* Work */
 #work {
 
 }
 
-#work #card-1 {
-    max-width: 700px;
-}
-
 #work .card {
-    max-width: 350px;
+    max-width: 33%;
+    border: var(--primary) solid 5px;
+    flex-direction: column;
+    flex: 1;
 }
 
+#work #card-1 {
+    max-width: 66%;
+}
+
+/* Contact Me */
 #contact-me ul{
     list-style-type: none;
+    display: flex;
 }
 
-@media
+#contact-me ul li a {
+    color: var(--main-text)
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    header, nav ul {
+        flex-direction: column;
+    }
+}
