@@ -1,4 +1,5 @@
 :root {
+    
 
 }
 
@@ -18,15 +19,38 @@ a {
 
 }
 
+/* Header */
 header {
-
+background-color: rgb(47, 48, 54);
+display: flex;
 }
 
 nav {
-
+ color:rgb(148, 208, 203);
 }
 
 nav a:hover {
 
 }
 
+nav ul {
+    list-style-type: none;
+}
+
+h2 {
+    color:rgb(76, 93, 119)
+}
+
+.about-me {
+
+}
+
+.work {
+
+}
+
+.contact-me {
+
+}
+
+@media
