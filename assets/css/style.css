@@ -2,6 +2,7 @@
     --main-text: rgb(76, 93, 119);
     --primary: rgb(148, 208, 203);
     --secondary: rgb(47, 48, 54);
+    --main-bg: rgba(225, 225, 225, 0.867);
 }
 
 * {
@@ -12,10 +13,11 @@
 
 body {
     font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--main-bg);
 }
 
 p {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 a {
@@ -26,34 +28,36 @@ a {
 header {
     background-color: var(--secondary);
     display: flex;
-    padding: 20px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-header h1 {
+h1 {
     background-color: var(--primary);
-    padding: 20px 20px;
+    padding: 20px 5px 20px;
+    justify-content: flex-start;
     align-self: center;
-
 }
 
 /* Nav */
-nav {
- display: flex;
+header nav {
+display: flex;
  justify-content: flex-end;
  align-items: center;
  padding: 0 50px;
 
 }
 
-nav ul {
+header nav ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    padding: 0 12px;
 }
 
 header nav ul li {
-    margin: 10px;
+    margin: 5px;
+    padding: 5px;
+    border-bottom: solid 2px var(--primary);
 }
 
 header nav ul li a {
@@ -62,7 +66,8 @@ header nav ul li a {
 
 /* Banner */
 .hero {
-    height: 200px;
+    display: flex;
+    height: 250px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../images/pexels-pixabay-270348.jpg");
@@ -73,23 +78,23 @@ header nav ul li a {
 
 .hero .avatar {
     max-height: 200px;
+    padding: 0 20px;
+    align-self: center;
 }
 
-.hero #subtitle {
+.hero .subtitle {
     background-color: var(--primary);
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
-    align-content: center;
+    align-self: flex-end;
+    height: 50px;
 }
 
 /* Main Content */
-h3 {
-    font-size: 36px;
-    color:var(--main-text);
-    border-right: solid var(--main-text);
-    padding: 0 10px;
-    text-align: right;
-    width: 20%;
+main {
+    display: flex;
+    flex-direction: column;
 }
 
  .page-section {
@@ -102,11 +107,21 @@ h3 {
     justify-content: space-between;
 } 
 
-/* About Me */
-#about-me {
+h3 {
+    font-size: 36px;
+    color:var(--main-text);
+    border-right: solid var(--main-text);
+    padding: 0 10px;
+    text-align: right;
+    width: 20%;
 }
 
+/* About Me */
+
 #about-me p {
+    width: 80%;
+    padding: 0 0 0 15px;
+    color: var(--secondary)
 }
 
 /* Work */
@@ -115,13 +130,20 @@ h3 {
 }
 
 #work .cards {
-    border: var(--primary) solid 5px;
+    display: flex;
+    flex-grow: 1;
     flex-direction: row;
-    max-width: 33%;
+    flex-wrap: wrap;
 
 }
 
-#work {
+.card {
+    border: var(--primary) solid 5px;
+    max-width: 80%;
+}
+
+#crochet-club {
+    background-image: ;
 }
 
 /* Contact Me */
