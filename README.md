@@ -17,6 +17,9 @@ https://smilillo.github.io/Professional-Portfolio/
 
 ### Screenshot
 
+![_Users_sofiamilillo_Documents_bootcampOSU_Professional-Portfolio_index html](https://user-images.githubusercontent.com/121981411/217151707-726b26ce-a9af-4fc6-b6a0-4648454dd240.png)
+
+
 ## License
 
 Please refer to the license in the repo.
